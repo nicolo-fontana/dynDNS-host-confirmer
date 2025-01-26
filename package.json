@@ -1,0 +1,19 @@
+{
+  "name": "dyndns-host-confirmer",
+  "version": "1.0.0",
+  "description": "Automatic bot written in node.js that automatically confirms free dynDNS host",
+  "type": "module",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "docker-build": "docker buildx build --platform  linux/arm64/v8,linux/amd64 -t YOUR_DOCKER_USERNAME/YOUR_DOCKER_REPOSITORY --push ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2"
+  }
+}
